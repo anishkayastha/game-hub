@@ -13,6 +13,7 @@ export interface Game {
     name: string;
     background_image: string;
     parent_platforms: { platform: Platform }[];
+    metacritic: number;
 }
 
 interface FetchGamesResponse {
@@ -34,7 +35,7 @@ const useGames = () => {
             setError(err.message)
         });
 
-        return () => controller.abort();
+        return () => controller.abort(); //cleanup function
   }, []);
 
   return { games, error };
