@@ -1,7 +1,6 @@
 import {
   Card,
   CardBody,
-  CardBodyProps,
   Skeleton,
   SkeletonText,
 } from "@chakra-ui/react";
