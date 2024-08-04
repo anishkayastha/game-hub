@@ -1,5 +1,5 @@
 import {
-  FaSteam,
+  FaWindows,
   FaPlaystation,
   FaXbox,
   FaApple,
@@ -19,7 +19,7 @@ interface Props {
 
 const PlatformIconList = ({ platforms }: Props) => {
   const iconMap: { [key: string]: IconType } = {
-    pc: FaSteam,
+    pc: FaWindows,
     playstation: FaPlaystation,
     xbox: FaXbox,
     nintendo: SiNintendoswitch,
